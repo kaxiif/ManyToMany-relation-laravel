@@ -69,5 +69,8 @@ Route::get('/detach',function(){
     $user = User::findOrFail(1);
     $user->roles()->detach(3);
 
+    //if we want to detech all
+    //$user->roles()->detach();
+
 
 });
